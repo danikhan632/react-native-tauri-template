@@ -1,13 +1,6 @@
 import { useNavigation } from "@react-navigation/native";
 import React, { useEffect, useLayoutEffect, useState } from "react";
-import {
-  Image,
-  SafeAreaView,
-  ScrollView,
-  Text,
-  TextInput,
-  View,
-} from "react-native";
+import {Image, SafeAreaView,ScrollView,Text,TextInput,View,} from "react-native";
 import * as Icons from "react-native-heroicons/outline";
 
 // import Categories from "../components/Categories";
@@ -44,7 +37,7 @@ export default function HomeScreen() {
   //console.log(featuredCategories, "😘😘");
 
   return (
-    <SafeAreaView className="bg-white pt-5">
+    <SafeAreaView className="android:bg-red pt-5">
       <View className="flex-row pb-3 items-center mx-4 space-x-2 ">
         <Image
           source={{
@@ -52,6 +45,7 @@ export default function HomeScreen() {
           }}
           className="h-7 w-7 bg-gray-300 p-4 rounded-full"
         />
+        {/* <LocationComponent /> */}
         <View className="flex-1">
           <Text className="font-bold text-gray-400 text-xs">Deliver Now!</Text>
           <Text className="font-bold text-xl">
@@ -93,3 +87,5 @@ export default function HomeScreen() {
     </SafeAreaView>
   );
 }
+
+
