@@ -8,12 +8,7 @@ import {
   TextInput,
   View,
 } from "react-native";
-import {
-  AdjustmentsIcon,
-  ChevronDownIcon,
-  SearchIcon,
-  UserIcon,
-} from "react-native-heroicons/outline";
+import * as Icons from "react-native-heroicons/outline";
 
 // import Categories from "../components/Categories";
 // import FeatureRow from "../components/FeatureRow";
@@ -61,21 +56,21 @@ export default function HomeScreen() {
           <Text className="font-bold text-gray-400 text-xs">Deliver Now!</Text>
           <Text className="font-bold text-xl">
             Current Location
-            <ChevronDownIcon size={20} color="#00CCBB" />
+            <Icons.ChevronDownIcon size={20} color="#00CCBB" />
           </Text>
         </View>
-        <UserIcon size={35} color="#00CCBB" />
+        <Icons.UserIcon size={35} color="#00CCBB" />
       </View>
       {/* search */}
       <View className="flex-row item-center space-x-2 pb-2 mx-4">
         <View className="flex-row space-x-2 flex-1 bg-gray-200 p-3">
-          <SearchIcon color="gray" size={20} />
+          <Icons.MagnifyingGlassCircleIcon color="gray" size={20} />
           <TextInput
             placeholder="Restaurants and cuisines"
             keyboardType="default"
           />
         </View>
-        <AdjustmentsIcon color="#00CCBB" />
+        <Icons.AdjustmentsHorizontalIcon color="#00CCBB" />
       </View>
       {/* Body */}
       <ScrollView
@@ -85,7 +80,7 @@ export default function HomeScreen() {
         }}
       >
         {/* Catagary */}
-        <Categories />
+        {/* <Categories /> */}
         {/* {featuredCategories?.map((category) => (
           <FeatureRow
             key={category._id}

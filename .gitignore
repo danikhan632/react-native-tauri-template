@@ -8,7 +8,8 @@ npm-debug.*
 *.key
 *.mobileprovision
 *.orig.*
-web-build/
+
+src-tauri/target
 
 # macOS
 .DS_Store
